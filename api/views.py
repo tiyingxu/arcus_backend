@@ -1,0 +1,17 @@
+from rest_framework import viewsets, status, mixins
+from rest_framework.response import Response
+from django.shortcuts import render
+from api.serializers import PostSerializer, TranslationSerializer
+from rest_framework.permissions import IsAuthenticatedOrReadOnly, IsAuthenticated, AllowAny
+from api.models import Post, Translation
+
+# Create your views here.
+class PostViewSet(viewsets.ModelViewSet):
+    queryset = Post.objects.all()
+    serializer_class = PostSerializer
+    permission_classes = (AllowAny,)
+
+class TranslationViewSet(viewsets.ModelViewSet):
+    queryset = Translation.objects.all()
+    serializer_class = TranslationSerializer
+    permission_classes = (AllowAny,)
