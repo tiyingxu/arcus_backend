@@ -8,8 +8,6 @@ django-jet==1.0.8
 djangorestframework==3.9.3
 feedparser==5.2.1
 idna==2.8
-numpy==1.16.4
-pandas==0.24.2
 Pillow==6.0.0
 psycopg2==2.8.2
 pygal==2.4.0
