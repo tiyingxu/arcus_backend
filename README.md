@@ -1,4 +1,4 @@
-# syl-api
+# arcus_backend
 
 This repo is part of https://github.com/tiyingxu/arcus_backend.git.
 
