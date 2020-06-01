@@ -21,11 +21,10 @@ class TranslationViewSet(viewsets.ModelViewSet):
         Given a username parameter, returns only the translations that the
         post specified
         """
-        pdb.set_trace()
-        queryset = Post.objects.all()
+        queryset = Translation.objects.all()
         post = request.query_params.get('post', None)
         if post is not None:   
-            queryset = Link.objects.filter(post__id=post)
+            queryset = Translation.objects.filter(post__id=post)
 
         serializer = self.serializer_class(queryset, many=True)
         return Response(serializer.data)

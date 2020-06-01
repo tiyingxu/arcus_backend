@@ -122,7 +122,7 @@ $ make build
 
 `make build` build containers (ask Carter)
 
-`run-dev` start containers with dev settings
+`make run-dev` start containers with dev settings
 
 `make run-prd` start containers with production settings
 
