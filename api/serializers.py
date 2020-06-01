@@ -6,9 +6,9 @@ class PostSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Post
-        fields = ('id', 'picture')
+        fields = ('id', 'picture', 'timestamp')
 
 class TranslationSerializer(serializers.ModelSerializer):
     class Meta:
         model = Translation
-        fields = ('id', 'english', 'other', 'other_lang', 'post')
+        fields = ('id', 'from_lang', 'from_word', 'other_word', 'other_lang', 'post')
